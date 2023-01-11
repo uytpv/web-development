@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>Task 8 - Loop Tasks - Factorial; sum of digits; sum of odd /even digits</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="text-primary">Checks the correctness of the personal ID number</h1>
+                <label>Enter Personal Identity Number format 
+                    <br/><b>ddmmyy[c][number][control_number]</b></label>
+                <br/>
+                <ul>
+                    <li><b>ddmmyy</b> : date of birt</li>
+                    <li><b>[c]</b> : century of birth: 1800 (+) 1900 (-) 2000 (A)</li>
+                    <li><b>[number]</b> : individual number if same date of birth, men have an odd, women have an even</li>
+                    <li><b>[control_number]</b> : 0123456789ABCDEFHJKLMNPRSTUVWX</li>
+                </ul>
+                <input type="text" id="text" placeholder="Input Personal ID">
+                <button id="btnAnalyze" onclick="analyze()">Check</button>
+                <br/>
+                <label id="lbl_input"><b><span id="input"></span></b></label>
+                <br/>
+                <label id="lbl_isValid"><b><span id="isValid" name="err"></span></b></label>
+                <br/>
+                <label id="lbl_age"><b><span id="age" ></span></b></label>
+                <br/>
+                <label id="age_detail"></label>
+            </div>
+            <div class="col-6">
+                <h1 class="text-info">Create an ID</h1>
+                <br/>
+                <input type="text" id="new_text" placeholder="">
+                <button onclick="create()">Create</button>
+                <br/>
+                <label id="lbl_new_input"><b><span id="new_input"></span></b></label>
+                <br/>
+                <label id="output"><b><span id="control_number"></span></b></label>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe id="ggMap" src="https://maps.google.com/maps?q=Korpimetsankatu10Lappeenranta&output=embed" frameborder="0" width="50%" height="300px"></iframe>
+    <h2>Search for the place</h2>
+    <label for="street">Street Address: </label>
+    <input type="text" placeholder="Type Street name" id="street" />
+    <label for="city">City: </label>
+    <input type="text" placeholder="Type City" id="city" />
+    <button id="search" value="" onClick="search()">Search</button>
+
+    <script>
+        function search() {
+            var street = document.getElementById('street').value;
+            var city = document.getElementById('city').value;
+            document.getElementById('ggMap').src = "https://maps.google.com/maps?q=" + street + city + "&output=embed"
+        }
+    </script>
+</body>
+
+</html>

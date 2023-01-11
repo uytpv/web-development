@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="a.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Task 1: Calculator with text box and dropdown list</h2>
+    <form id="form1">
+        <input name="num1" id="num1" type="number" style="width: 100px;" />
+        <select id="operator1" name="operator1">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input name="num2" id="num2" type="number" style="width: 100px;" />
+        <input type="button" id="equal1" value="=" onClick="calculator(1)" />
+        <label id="result1">Press = mark !</label>
+    </form>
+    <h2>Task 2: Calculator with text box and option buttons</h2>
+    <form id="form2">
+        <input name="num3" id="num3" type="number" /><br/>
+        <input type="radio" name="operator2" id="+" value="+" />
+        <label for="+">Addition</label><br/>
+        <input type="radio" name="operator2" id="-" value="-" />
+        <label for="-">Subtraction</label><br/>
+        <input type="radio" name="operator2" id="*" value="*" />
+        <label for="*">Multiplication</label><br/>
+        <input type="radio" name="operator2" id="/" value="/" />
+        <label for="/">Distribution</label><br/>
+        <input name="num4" id="num4" type="number" />
+        <input type="button" id="equal2" value="=" onClick="calculator(2)" />
+        <label id="result2">Press = mark !</label>
+    </form>
+    <h2>Task 3: Calculator with text box and increment/decrement buttons</h2>
+    <form id="form3">
+        <input type="button" id="dec" value="&#128772;" onClick="decrement('num5')" />
+        <input name="num5" id="num5" type="number" value="0" required style="width: 100px;" readonly />
+        <input type="button" id="inc" value="&#128770;" onClick="increment('num5')" />
+        <select id="operator3" name="operator3">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="button" id="dec" value="&#128772;" onClick="decrement(document.getElementById('num6').id)" />
+        <input name="num6" id="num6" type="number" value="0" required style="width: 100px;" readonly/>
+        <input type="button" id="inc" value="&#128770;" onClick="increment(document.getElementById('num6').id)" />
+        <input type="button" id="equal3" value="=" onClick="calculator(3)" />
+        <label id="result3">Press = mark !</label>
+    </form>
+</body>
+
+</html>

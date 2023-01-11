@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table width="500">
+        <tr>
+            <td>
+                <h1>Form</h1>
+                <form action="action.html" method="get" target="_self">
+                    <fieldset>
+                        <legend>Contact Information:</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label for="fname">First name:</label>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="fname" name="fname" placeholder="First name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="lname">Last name:</label>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="lname" name="lname" placeholder="Last name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="email">Email:</label>
+                                            </td>
+                                            <td>
+                                                <input type="email" id="email" name="email" placeholder="Email">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="telephone">Telephone:</label>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="telephone" name="telephone" placeholder="Telephone">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <td valign="top">
+                                        <label for="lname">Preferred contact method:</label>
+                                        <br/>
+                                        <input type="checkbox" id="preffered_email" name="preffered_email" value="1">
+                                        <label for="vehicle1"> Email</label><br>
+                                        <input type="checkbox" id="preffered_telephone" name="preffered_telephone" value="2">
+                                        <label for="vehicle2">Telephone</label>
+                                    </td>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Feedback:</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="subject">Message subject:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="subject" name="subject" placeholder="Message subject">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea id="message" name="message" rows="15" cols="50"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <label for="file">Attach a file:</label>
+                    <input type="file" id="file" name="file">
+                    <br>
+                    <hr>
+                    <input type="submit" value="Send">
+                </form>
+                <br>
+                <hr>
+                <h1>Form no labels</h1>
+                <form action="action.html" method="get" target="_self">
+                    <fieldset>
+                        <legend>Contact Information:</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+
+                                            <td>
+                                                <input type="text" id="fname" name="fname" placeholder="First name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <input type="text" id="lname" name="lname" placeholder="Last name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <input type="email" id="email" name="email" placeholder="Email">
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <input type="text" id="telephone" name="telephone" placeholder="Telephone">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <td valign="top">
+                                        <label for="lname">Preferred contact method:</label>
+                                        <br/>
+                                        <input type="checkbox" id="preffered_email" name="preffered_email" value="1">
+                                        <label for="vehicle1"> Email</label><br>
+                                        <input type="checkbox" id="preffered_telephone" name="preffered_telephone" value="2">
+                                        <label for="vehicle2">Telephone</label>
+                                    </td>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Feedback:</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" id="subject" name="subject" placeholder="Message subject">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="message" name="message" rows="15" cols="50"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <label for="file">Attach a file:</label>
+                    <input type="file" id="file" name="file">
+                    <br>
+                    <hr>
+                    <input type="submit" value="Send">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

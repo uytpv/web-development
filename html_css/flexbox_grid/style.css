@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: #ffffff;
+    text-align: center;
+    font: 1.15em/1 "Open Sans", sans-serif;
+    color: #ffffff;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+#header {
+    background-color: #afded4;
+}
+
+.logo {
+    padding: 2%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2.dark {
+    color: #34495E;
+}
+
+h2 {
+    font: 300 2em/1 "Raleway", sans-serif;
+    color: #ffffff;
+    padding: 2%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6
+}
+
+p.dark {
+    color: #34495E;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1%;
+    box-shadow: 5px 5px 10px rgb(232, 233, 233);
+}
+
+.card h3 {
+    color: #34495E;
+    font-size: medium;
+    padding: 5%;
+}
+
+h3.dark {
+    color: #34495E;
+    font-weight: 100;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 2% 20%;
+}
+
+.walking {
+    background-image: url("images/walking.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.walking .button {
+    background-color: #138a72;
+    /* Green */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+footer {
+    background-color: #16a085;
+}
+
+
+/* Media Queries */
+
+@media all and (max-width: 900px) {
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .row {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+    [class*="col-"]:last-child {
+        margin: 0;
+    }
+    .col-1 {
+        flex: 1
+    }
+    .col-2 {
+        flex: 2;
+    }
+    .col-3 {
+        flex: 3;
+    }
+    .col-4 {
+        flex: 4;
+    }
+    .col-5 {
+        flex: 5;
+    }
+    .col-10 {
+        flex: 10;
+    }
+    .col-12 {
+        flex: 12;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2%;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .logo {
+        max-width: 185px;
+    }
+    h2 {
+        font-size: 1.25em;
+        padding: 3%;
+        transform: translateY(0%);
+    }
+    h3.dark {
+        margin: 2% 7%;
+        font-size: .8em;
+    }
+    p {
+        font-size: .9em;
+    }
+    .card h3 {
+        font-size: .9em;
+        padding: 2%;
+    }
+    .walking {
+        height: 500px;
+    }
+}
